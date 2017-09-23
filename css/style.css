@@ -1,0 +1,123 @@
+/*
+    Main style sheet
+*/
+html, body {
+    width:100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background:#FDFDFD;
+    background-image: url("../img/blue-grad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*////////////////////////////////*/
+/*           Classes              */
+/*////////////////////////////////*/
+
+
+.nav-item{
+    float: left;
+    display: block;
+    padding-left: 8px;
+    font-family: 'Roboto';
+}
+
+/*Navigation bar link css*/
+
+.nav-item a:link, .nav-item a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-item a:hover {
+    color: #000080;
+}
+.active {
+    text-decoration: underline;
+    color:white;
+}
+
+
+.about-content{
+    /*padding-top: 30px;*/
+    width: 60%;
+    margin:0 auto;
+    overflow:hidden;
+    color: white;
+    /*background: rgba(26,26,26,0.7);*/
+    /*-webkit-backdrop-filter: blur(100px);*/
+    /*filter: blur(10px);*/
+}
+
+.about-me-header{
+    text-align: center;
+    padding-top:20px;
+    font-family: Arvo;
+    font-size: 12px;
+}
+
+.about-picture{
+    float: left;
+    height: 100%;
+    width: 25%;
+    padding-top: 20px;
+}
+
+.about-text {
+    float: left;
+    width: 68%;
+    font-family: 'Lato';
+    font-size: 18px;
+    padding-left: 20px;
+    color: white;
+}
+
+/*////////////////////////////////*/
+/*               ID's             */
+/*////////////////////////////////*/
+#page-header {
+    float: left;
+    margin: auto;
+    font-family: 'Roboto';
+}
+
+#nav-bar{
+    width: 60%;
+    overflow: auto;
+    margin:0 auto;
+    padding-top: 40px;
+    border-bottom: 1px solid #000000;
+}
+
+#nav-name {
+    font-family: 'Raleway';
+    font-size: 40px;
+    /*font-weight:800;*/
+    color: #000080;
+}
+#nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    padding-right: 15px;
+    float: right;
+}
+
+#display-picture {
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+/*////////////////////////////////*/
+/*        Responsive CSS          */
+/*////////////////////////////////*/
+
+@media screen and (max-width: 1050px) {
+    .about-picture, .about-text{
+        float: none;
+        margin: auto;
+    }
+}
